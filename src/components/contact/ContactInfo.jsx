@@ -1,14 +1,13 @@
-import React from 'react';
+import React from "react";
+import SingleInfo from "./SingleInfo";
+import { MdEmail } from "react-icons/md";
 
 const ContactInfo = () => {
-    return (
-        <div>
-            <h2>Contact Information</h2>
-            {/* Mobile: +1234567890 */}
-            {/* Location: New York, USA */}
-            <p>Email: contact@example.com</p>
-        </div>
-    );
+  return (
+    <div className="flex flex-col gap-4 text-white">
+      <SingleInfo text="workforsoumya21@gmail.com" Image={MdEmail} />
+    </div>
+  );
 };
 
 export default ContactInfo;
